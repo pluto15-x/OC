@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/jtsj"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:id="@+id/img_jtsj"
+            android:layout_width="51dp"
+            android:layout_height="53dp"
+            android:background="@drawable/jtsj" />
+
+        <Button
+            android:id="@+id/btn_jtsj"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="#575"
+            android:text="交通数据"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sjtj"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/jtsj">
+
+        <ImageView
+            android:id="@+id/img_sjtj"
+            android:layout_width="51dp"
+            android:layout_height="53dp"
+            android:background="@drawable/sjtj" />
+
+        <Button
+            android:id="@+id/btn_sjtj"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="#575"
+            android:text="数据添加"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/jtfx"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_below="@+id/jtsj"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/img_jtfx"
+            android:layout_width="51dp"
+            android:layout_height="53dp"
+            android:background="@drawable/sjfx" />
+
+        <Button
+            android:id="@+id/btn_jtfx"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="#575"
+            android:text="交通分析"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cxzn"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_below="@id/sjtj"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/jtfx">
+
+        <ImageView
+            android:id="@+id/img_cxzn"
+            android:layout_width="51dp"
+            android:layout_height="53dp"
+            android:background="@drawable/cxzn" />
+
+        <Button
+            android:id="@+id/btn_cxzn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="#575"
+            android:text="出行指南"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/jtfx" />
+
+</RelativeLayout>
